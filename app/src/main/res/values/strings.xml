@@ -15,4 +15,8 @@
         latte glass or a coffee cup. Flavored syrup can be added.</string>
     <string name="coffee_list">Coffee List</string>
     <string name="hello_blank_fragment">Hello Fragment!</string>
+    <string name="matcha_latte_title">MATCHA LATTE</string>
+    <string name="matcha_latte_desc">A smooth latte made with espresso, steamed milk, and matcha powder. Can be served hot or iced for a sweet, creamy flavor with coffee kick.</string>
+    <string name="caramel_macchiato_title">CARAMEL MACCHIATO</string>
+    <string name="caramel_macchiato_desc">Espresso poured over steamed milk with vanilla syrup and finished with a caramel drizzle on top. Sweet and rich flavor.</string>
 </resources>

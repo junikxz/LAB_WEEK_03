@@ -7,6 +7,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentContainerView
 import androidx.fragment.app.ListFragment
 class MainActivity : AppCompatActivity(){
+
+    private val listFragment = ListFragment() // simpan satu instance
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,4 +23,6 @@ class MainActivity : AppCompatActivity(){
             insets
         }
     }
+
+
 }

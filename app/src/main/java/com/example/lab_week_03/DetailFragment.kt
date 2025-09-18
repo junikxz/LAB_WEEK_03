@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,9 +37,14 @@ class DetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false)
+    ): View {
+        val view = inflater.inflate(R.layout.fragment_detail, container, false)
+
+        view.findViewById<Button>(R.id.button_back).setOnClickListener {
+            parentFragmentManager.popBackStack()
+        }
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,6 +68,16 @@ class DetailFragment : Fragment() {
             R.id.latte -> {
                 coffeeTitle?.text = getString(R.string.latte_title)
                 coffeeDesc?.text = getString(R.string.latte_desc)
+            }
+
+            R.id.matcha -> {
+                coffeeTitle?.text = getString(R.string.matcha_latte_title)
+                coffeeDesc?.text = getString(R.string.matcha_latte_desc)
+            }
+
+            R.id.caramel_macchiato -> {
+                coffeeTitle?.text = getString(R.string.caramel_macchiato_title)
+                coffeeDesc?.text = getString(R.string.caramel_macchiato_desc)
             }
         }
     }
